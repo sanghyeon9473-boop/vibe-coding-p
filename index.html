@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sanghyeon An — Solo Developer Portfolio</title>
+
+  <!-- 웹 폰트 (Playfair Display 세리프 폰트 & Plus Jakarta Sans 산세리프 폰트) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&display=swap"
+    rel="stylesheet">
+
+  <!-- 스타일시트 연결 -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- 상단 네비게이션 바 -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <!-- 로고 -->
+      <a href="#" class="logo">
+        <span class="logo-dots">
+          <span class="dot dot-purple"></span>
+          <span class="dot dot-yellow"></span>
+          <span class="dot dot-cyan"></span>
+        </span>
+        <span class="logo-text">leFolio</span>
+      </a>
+
+      <!-- 데스크톱 메뉴 링크 -->
+      <nav class="nav-links" id="navMenu">
+        <a href="#about" class="nav-item">ABOUT ME</a>
+        <a href="#services" class="nav-item">SERVICES</a>
+        <a href="#video-showcase" class="nav-item">PROJECTS</a>
+        <a href="#contact" class="nav-item">CONTACT</a>
+        <button class="btn btn-outline mobile-only-cv" id="mobileCvBtn">Download CV</button>
+      </nav>
+
+      <!-- 모바일 햄버거 메뉴 버튼 -->
+      <button class="hamburger-btn" id="hamburgerBtn" aria-label="메뉴 열기">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- 1. HERO 섹션 -->
+    <section class="section hero-section" id="hero">
+      <div class="container hero-container">
+        <!-- 히어로 왼쪽 텍스트 -->
+        <div class="hero-content">
+          <div class="badge">
+            <span class="badge-line"></span>
+            <span class="badge-text">Solo developer</span>
+          </div>
+
+          <h1 class="hero-title">Sanghyeon An</h1>
+
+          <p class="hero-subtitle">
+            I am a Solo developer. Let's work together.
+          </p>
+
+          <div class="hero-buttons">
+            <button class="btn btn-primary open-modal-btn">Contact Me</button>
+            <a href="#contact" class="btn btn-text-link">Download CV</a>
+          </div>
+
+          <!-- 도트 패턴 장식 (왼쪽 하단) -->
+          <div class="dot-matrix hero-dots" aria-hidden="true"></div>
+        </div>
+
+        <!-- 히어로 오른쪽 비주얼/인물 카드 -->
+        <div class="hero-visual">
+          <!-- 배경 장식 요소들 -->
+          <div class="deco-ring deco-ring-1" aria-hidden="true"></div>
+          <div class="deco-dots-group" aria-hidden="true">
+            <span></span><span></span><span></span>
+            <span></span><span></span><span></span>
+            <span></span><span></span><span></span>
+          </div>
+
+          <!-- 인물 사진 카드 프레임 -->
+          <div class="hero-card-wrapper">
+            <div class="hero-card">
+              <img src="images/hero-designer.jpg" alt="1인 개발자 Sanghyeon An 프로필 사진" class="hero-img">
+            </div>
+            <!-- 카드 주변 포인트 장식 -->
+            <div class="card-glow" aria-hidden="true"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. ABOUT ME / 프로세스 섹션 -->
+    <section class="section about-section" id="about">
+      <div class="container about-container">
+        <!-- 왼쪽: 4개 프로세스 카드 그리드 (서로 연결된 구조) -->
+        <div class="process-cards-wrapper">
+          <!-- 카드 연결 라인 장식 -->
+          <div class="connection-line-h" aria-hidden="true"></div>
+          <div class="connection-line-v" aria-hidden="true"></div>
+
+          <div class="process-grid">
+            <!-- 1. Architecture -->
+            <div class="process-card">
+              <div class="process-icon-box">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                  <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                  <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                </svg>
+              </div>
+              <h3 class="process-name">Architecture</h3>
+            </div>
+
+            <!-- 2. Development -->
+            <div class="process-card">
+              <div class="process-icon-box">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                  <line x1="14" y1="4" x2="10" y2="20"></line>
+                </svg>
+              </div>
+              <h3 class="process-name">Development</h3>
+            </div>
+
+            <!-- 3. Testing & QA -->
+            <div class="process-card">
+              <div class="process-icon-box">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="m9 12 2 2 4-4"></path>
+                  <circle cx="12" cy="12" r="10"></circle>
+                </svg>
+              </div>
+              <h3 class="process-name">Testing & QA</h3>
+            </div>
+
+            <!-- 4. Deployment -->
+            <div class="process-card">
+              <div class="process-icon-box">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"></path>
+                  <path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"></path>
+                  <path d="M9 12H4s.55-3.03 2-4.5c1.62-1.63 5-2 5-2"></path>
+                  <path d="M12 15v5s3.03-.55 4.5-2c1.63-1.62 2-5 2-5"></path>
+                </svg>
+              </div>
+              <h3 class="process-name">Deployment</h3>
+            </div>
+          </div>
+        </div>
+
+        <!-- 오른쪽: About 설명 텍스트 -->
+        <div class="about-content">
+          <!-- 민트/에메랄드빛 배경 삼각형 데코 -->
+          <div class="triangle-deco" aria-hidden="true"></div>
+
+          <div class="badge">
+            <span class="badge-line"></span>
+            <span class="badge-text">ABOUT ME</span>
+          </div>
+
+          <h2 class="section-title">Better code,<br>better solutions</h2>
+
+          <p class="about-description">
+            아이디어 구상부터 아키텍처 설계, 풀스택 개발, 클라우드 배포까지 전 과정을 책임지는 1인 개발자(Solo Developer) 안상현입니다.
+            군더더기 없는 깔끔한 코드와 신뢰할 수 있는 시스템으로 비즈니스를 성공시키는 디지털 제품을 만듭니다.
+          </p>
+
+          <div class="hero-buttons">
+            <button class="btn btn-primary open-modal-btn">Contact Me</button>
+            <a href="#contact" class="btn btn-text-link">Download CV</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. MEDIA / VIDEO SHOWCASE 섹션 (2번째 이미지 상단) -->
+    <section class="section video-section" id="video-showcase">
+      <div class="container video-container">
+        <!-- 배경 도트 및 링 데코 -->
+        <div class="video-deco-dots-left" aria-hidden="true">
+          <span></span><span></span><span></span>
+          <span></span><span></span><span></span>
+        </div>
+        <div class="video-deco-dots-right" aria-hidden="true"></div>
+        <div class="deco-ring video-ring-top" aria-hidden="true"></div>
+
+        <!-- 미디어 플레이어 카드 프레임 -->
+        <div class="video-card">
+          <div class="video-media-wrapper">
+            <img src="images/video-showcase.jpg" alt="쇼케이스 영상 썸네일: 즐겁게 몰입하여 개발하는 1인 개발자" class="video-thumbnail"
+              id="videoThumbnail">
+
+            <!-- 플레이 오버레이 효과 (재생 시 활성화) -->
+            <div class="media-playing-badge" id="playingBadge">
+              <span class="pulse-dot"></span> NOW CODING 💻
+            </div>
+          </div>
+
+          <!-- 미디어 컨트롤러 바 -->
+          <div class="video-control-bar">
+            <!-- 재생 / 일시정지 버튼 -->
+            <button class="play-btn" id="playBtn" aria-label="재생/일시정지">
+              <svg class="icon-play" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+              </svg>
+              <svg class="icon-pause" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"
+                style="display:none;">
+                <rect x="6" y="4" width="4" height="16"></rect>
+                <rect x="14" y="4" width="4" height="16"></rect>
+              </svg>
+            </button>
+
+            <!-- 프로그레스 진행 바 -->
+            <div class="progress-track" id="progressTrack">
+              <div class="progress-bar-fill" id="progressBarFill" style="width: 48%;"></div>
+              <div class="progress-scrubber" id="progressScrubber" style="left: 48%;"></div>
+            </div>
+
+            <!-- 타임코드 -->
+            <span class="video-time" id="videoTime">4:23 MIN</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. MY SKILLS / 서비스 섹션 (2번째 이미지 하단) -->
+    <section class="section skills-section" id="services">
+      <div class="container skills-container">
+        <!-- 왼쪽: 스킬 설명 & CTA -->
+        <div class="skills-content">
+          <div class="badge">
+            <span class="badge-line"></span>
+            <span class="badge-text">MY SKILLS</span>
+          </div>
+
+          <h2 class="section-title">Things I can do for<br>my clients</h2>
+
+          <p class="skills-description">
+            아키텍처 설계부터 풀스택 개발, 배포까지 아이디어를 빠르고 견고한 디지털 서비스로 완성합니다.
+          </p>
+
+          <div class="hero-buttons">
+            <button class="btn btn-primary open-modal-btn">Hire Me</button>
+            <a href="#contact" class="btn btn-text-link">Download CV</a>
+          </div>
+
+          <!-- 도트 그리드 장식 -->
+          <div class="dot-matrix skills-dots" aria-hidden="true"></div>
+        </div>
+
+        <!-- 오른쪽: 4개의 서비스 카드 그리드 -->
+        <div class="skills-cards-grid">
+          <!-- 1. Web Frontend -->
+          <div class="skill-card">
+            <h3 class="skill-card-title">Web Frontend</h3>
+            <p class="skill-card-text">
+              모던 반응형 웹, 직관적인 UI 인터랙션, 웹 표준 준수 및 빠른 로딩 속도를 보장하는 프론트엔드를 개발합니다.
+            </p>
+            <a href="#contact" class="explore-link">
+              Explore More
+              <span class="arrow">→</span>
+            </a>
+          </div>
+
+          <!-- 2. Backend & API -->
+          <div class="skill-card">
+            <h3 class="skill-card-title">Backend & API</h3>
+            <p class="skill-card-text">
+              대규모 트래픽에도 안정적인 서버 로직, 데이터베이스 모델링 및 안전한 REST/GraphQL API를 구축합니다.
+            </p>
+            <a href="#contact" class="explore-link">
+              Explore More
+              <span class="arrow">→</span>
+            </a>
+          </div>
+
+          <!-- 3. Full-Stack Solution -->
+          <div class="skill-card">
+            <h3 class="skill-card-title">Full-Stack Solution</h3>
+            <p class="skill-card-text">
+              기획 단계부터 최종 프로덕트 출시까지 빈틈없는 유기적 연동과 최적의 성능을 1인 개발로 완성합니다.
+            </p>
+            <a href="#contact" class="explore-link">
+              Explore More
+              <span class="arrow">→</span>
+            </a>
+          </div>
+
+          <!-- 4. DevOps & Cloud -->
+          <div class="skill-card">
+            <h3 class="skill-card-title">DevOps & Cloud</h3>
+            <p class="skill-card-text">
+              클라우드 호스팅 인프라 구축, CI/CD 자동화 배포 파이프라인 및 무중단 운영 환경을 지원합니다.
+            </p>
+            <a href="#contact" class="explore-link">
+              Explore More
+              <span class="arrow">→</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. CONTACT & FOOTER 섹션 (자연스럽게 완성도를 높이는 하단부) -->
+    <section class="section contact-section" id="contact">
+      <div class="container contact-container">
+        <div class="contact-card">
+          <div class="contact-header">
+            <div class="badge badge-center">
+              <span class="badge-line"></span>
+              <span class="badge-text">GET IN TOUCH</span>
+            </div>
+            <h2 class="contact-title">Let's build something remarkable</h2>
+            <p class="contact-subtitle">새로운 개발 프로젝트 아이디어가 있으신가요? 언제든 편하게 연락주세요.</p>
+          </div>
+
+          <form class="contact-form" id="contactForm" onsubmit="return false;">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="nameInput">이름</label>
+                <input type="text" id="nameInput" placeholder="홍길동" required>
+              </div>
+              <div class="form-group">
+                <label for="emailInput">이메일</label>
+                <input type="email" id="emailInput" placeholder="hello@example.com" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="messageInput">프로젝트 메시지</label>
+              <textarea id="messageInput" rows="4" placeholder="어떤 개발 프로젝트를 구상 중이신가요?" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block" id="submitFormBtn">메시지 보내기</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 푸터 -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <a href="#" class="logo">
+          <span class="logo-dots">
+            <span class="dot dot-purple"></span>
+            <span class="dot dot-yellow"></span>
+            <span class="dot dot-cyan"></span>
+          </span>
+          <span class="logo-text">leFolio</span>
+        </a>
+        <p class="footer-tagline">Crafting digital products with clean code & passion.</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#video-showcase">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Sanghyeon An. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Contact Me / Hire Me 팝업 모달 -->
+  <div class="modal-overlay" id="contactModal">
+    <div class="modal-box">
+      <button class="modal-close" id="closeModalBtn" aria-label="닫기">&times;</button>
+      <div class="modal-header">
+        <h3 class="modal-title">개발 프로젝트 문의하기</h3>
+        <p class="modal-subtitle">궁금한 점이나 개발 협업 제안을 남겨주시면 24시간 내에 답변드립니다.</p>
+      </div>
+      <div class="modal-body">
+        <div class="modal-info-item">
+          <strong>📧 이메일:</strong> contact@sanghyeon.dev
+        </div>
+        <div class="modal-info-item">
+          <strong>📍 위치:</strong> Seoul, South Korea / Remote Worldwide
+        </div>
+        <div class="modal-info-item">
+          <strong>💼 현재 상태:</strong> 2026년 1인 개발 신규 프로젝트 협업 가능
+        </div>
+      </div>
+      <div class="modal-actions">
+        <a href="mailto:contact@sanghyeon.dev" class="btn btn-primary btn-block">이메일 바로 보내기</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 자바스크립트 연결 -->
+  <script src="script.js"></script>
+</body>
+
+</html>
